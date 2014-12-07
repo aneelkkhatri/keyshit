@@ -241,7 +241,7 @@
 			}
 			else {
 				if (queue.length <= MIN) {
-					updatePopupOverMessage("You can hit a key only if there are atleast " + (MIN+1) + " key(s) on the board!");
+					updatePopupOverMessage("You can hit a key only if there are atleast " + (MIN+1) + " key(s) on the screen!");
 				}
 				else {
 					updatePopupOverMessage("Wrong key!");

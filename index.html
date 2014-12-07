@@ -11,32 +11,59 @@
 
 	<div id="main-container">
 		<div id="game-title"><span class="title-keys">Keys</span><span class="title-hit">Hit</span></div>
-		<div id="game-content">
+		<div id="game-score"><div>SCORE: <span id="score-text"></span></div></div>
+		<div id="game-best-score"><div>BEST SCORE: <span id="best-score-text"></span></div></div>
+		<div id="game-content" class="state-0">
 			<div id="key-containers">
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="1"></div>
-				<div class="key-container" data-used="0"></div>
-				<div class="key-container" data-used="0"></div>
-				<div class="key-container" data-used="0"></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+				<div class="key-container"><div class="container-text"></div></div>
+			</div>
+			<div class="popups">
+				<div class="popup" id="start-game-popup">
+					<div class="popup-inner">
+						<div><button class="btn wide-btn" id="start-button">START</button></div>
+						<div><button class="btn wide-btn how-to-play-button">HOW TO PLAY?</button></div>
+					</div>
+				</div>
+
+				<div class="popup" id="restart-game-popup">
+					<div class="popup-inner">
+						<div id="popup-over-msg"></div>
+						<div style="font-size:18px">SCORE: <span id="popup-score-text">0</span></div>
+						<div><button class="btn wide-btn" id="restart-button">RESTART</button></div>
+						<div><button class="btn wide-btn how-to-play-button">HOW TO PLAY?</button></div>
+					</div>
+				</div>
+				<div class="popup" id="how-to-play-game-popup">
+					<div class="popup-inner">
+						<p>1. Type the keys in the order they appear.</p>
+						<p>2. There should be atleast 2 keys on the screen all the time.</p>
+						<p>3. There should be atleast 1 empty circle all the time.</p>
+						<div><button class="btn wide-btn pop-state-btn">OK</button></div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="content">
-			<div class="value-holder"></div>
+		<div id="footer">
+			<div class="footer-text">made by <a href="http://www.twitter.com/aneelkkhatri" target="_blank">aneel</a></div>
 		</div>
 	</div>
 

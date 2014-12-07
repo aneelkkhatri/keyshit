@@ -1,0 +1,93 @@
+
+html,body {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    font-family: 'Raleway', 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    /*text-transform:uppercase;*/
+    width:100%;
+
+    color: #60686e;
+    
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: antialiased !important;
+
+    text-rendering: geometricPrecision;
+}
+
+#main-container {
+    max-width: 768px;
+    width: 768px;
+    height: 100%;
+    
+    margin: auto;
+}
+
+.content {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    /*background-color: #fa0;*/
+    left: 10%;
+    top: 10%;
+}
+
+.value-holder {
+    /*background-color: #fa0;*/
+    display: inline-block;
+    font-size: 200px;
+
+    width: 220px;
+    height: 220px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    text-align: center;
+
+    margin-left: -110px;
+    margin-top: -110px;
+}
+
+
+.key-container {
+    float: left;
+    
+    background-color: #eeeeee;
+    
+    margin: 10px;
+    
+    width: 70px;
+    height: 70px;
+
+    border-radius: 45%;
+}
+
+#game-title {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+
+    font-size: 24px;
+}
+#game-title .title-keys {
+    font-weight:400;
+}
+#game-title .title-hit {
+    font-weight: 900;
+}
+#game-content {
+    width: 450px;
+    height: 400px;
+
+    margin: auto;
+}

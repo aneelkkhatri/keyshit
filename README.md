@@ -8,9 +8,9 @@ I myself find it all addictive!
 
 ## Screenshots
 
-![KeysHit](http://uakk0f16695f.aneelkkhatri.koding.io/keyshit00.png "KeysHit")
-![KeysHit](http://uakk0f16695f.aneelkkhatri.koding.io/keyshit00.png "KeysHit")
-![KeysHit](http://uakk0f16695f.aneelkkhatri.koding.io/keyshit00.png "KeysHit")
+![KeysHit](http://i.imgur.com/lQumbzY.png "KeysHit")
+![KeysHit](http://i.imgur.com/0seGZik.png "KeysHit")
+![KeysHit](http://i.imgur.com/dGMKRia.png "KeysHit")
 
 ## APIs used
 

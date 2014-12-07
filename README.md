@@ -8,8 +8,6 @@ I myself find it all addictive!
 
 ## Screenshots
 
-Here provide couple screenshots of your project. You can use a tool like https://monosnap.com/welcome or https://droplr.com to take a screenshot. Animated gifs are also welcome.
-
 ![KeysHit](http://uakk0f16695f.aneelkkhatri.koding.io/keyshit00.png "KeysHit")
 ![KeysHit](http://uakk0f16695f.aneelkkhatri.koding.io/keyshit00.png "KeysHit")
 ![KeysHit](http://uakk0f16695f.aneelkkhatri.koding.io/keyshit00.png "KeysHit")

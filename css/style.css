@@ -4,7 +4,7 @@ html,body {
     /*overflow: hidden;*/
 }
 body {
-    font-family: 'Raleway', 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size:12px;
     height:100%;
@@ -112,7 +112,7 @@ a:hover {
     font-weight:400;
 }
 #game-title .title-hit {
-    font-weight: 600;
+    font-weight: 900;
 }
 #game-score,
 #game-best-score {

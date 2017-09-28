@@ -1,13 +1,13 @@
 
 html,body {
-    height: 100%;
+    /*height: 100%;*/
     /*overflow: hidden;*/
 }
 body {
     font-family: monospace;
     font-weight: 400;
     font-size:12px;
-    height:100%;
+    
     margin:0px;
     padding:0px;
     /*text-transform:uppercase;*/
@@ -133,9 +133,14 @@ a:hover {
     position: relative;
 }
 #footer {
-    padding: 10px;
+    /*padding: 10px;*/
     margin: 10px;
 }
+.github-link {
+    margin-bottom: 10px;
+}
+
+.github-link, 
 .footer-text {
     text-align: center;
 }
@@ -161,7 +166,7 @@ a:hover {
 
 .btn {
     font-family: monospace;
-    
+
     cursor: pointer;
 
     height: 30px;

@@ -228,8 +228,16 @@
 
 	document.addEventListener('keypress', function(e) {
 		var keyCode = e.keyCode;
-		// console.log(keyCode);
-		// console.log(queue);
+
+		if (e.key) {
+			if (e.key == 'Enter') {
+				keyCode = KEYS.ENTER;
+			}
+			else {
+				keyCode = e.key.charCodeAt(0)
+			}
+		}
+		
 		if(gameState == GAME_STATE.PLAYING) {
 
 			if( queue.length > MIN && queue[0].key == keyCode) {

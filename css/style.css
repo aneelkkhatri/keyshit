@@ -4,7 +4,7 @@ html,body {
     /*overflow: hidden;*/
 }
 body {
-    font-family: 'Roboto', 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family: monospace;
     font-weight: 400;
     font-size:12px;
     height:100%;
@@ -160,6 +160,8 @@ a:hover {
 }
 
 .btn {
+    font-family: monospace;
+    
     cursor: pointer;
 
     height: 30px;

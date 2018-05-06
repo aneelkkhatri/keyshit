@@ -226,6 +226,26 @@
 		return container;
 	}
 
+	function checkKeyCode(keyCode) {
+		if( queue.length > MIN && queue[0].key == keyCode) {
+			resetBox(queue[0].box);
+			queue.splice(0,1);
+
+			updateGameScore(score+1);
+
+		}
+		else {
+			if (queue.length <= MIN) {
+				updatePopupOverMessage("You can hit a key only if there are atleast " + (MIN+1) + " key(s) on the screen!");
+			}
+			else {
+				updatePopupOverMessage("Wrong key!");
+			}
+			gameStateStack.push(GAME_STATE.OVER);
+			updateGameState(GAME_STATE.RESETING);
+		}
+	}
+
 	document.addEventListener('keypress', function(e) {
 		var keyCode = e.keyCode;
 
@@ -239,24 +259,7 @@
 		}
 		
 		if(gameState == GAME_STATE.PLAYING) {
-
-			if( queue.length > MIN && queue[0].key == keyCode) {
-				resetBox(queue[0].box);
-				queue.splice(0,1);
-
-				updateGameScore(score+1);
-
-			}
-			else {
-				if (queue.length <= MIN) {
-					updatePopupOverMessage("You can hit a key only if there are atleast " + (MIN+1) + " key(s) on the screen!");
-				}
-				else {
-					updatePopupOverMessage("Wrong key!");
-				}
-				gameStateStack.push(GAME_STATE.OVER);
-				updateGameState(GAME_STATE.RESETING);
-			}
+			checkKeyCode(keyCode);
 		}
 		else {
 			
@@ -290,6 +293,15 @@
 			updateGameState(gameStateStack.pop());
 		});
 
+		gameContent.addEventListener('click', function (e) {
+			if(gameState == GAME_STATE.PLAYING) {
+				console.log(e.target);
+				if (e.target.getAttribute('class').indexOf('container-text') >= 0) {
+					console.log(e.target.textContent.charCodeAt(0));
+					checkKeyCode(e.target.textContent.charCodeAt(0))
+				}
+			}
+		})
 	})();
 	
 

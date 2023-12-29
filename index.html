@@ -71,8 +71,6 @@
 		</div>
 	</div>
 
-	<script type="text/javascript" src="js/key-container-colors.js"></script>
-	<script type="text/javascript" src="js/game.js"></script>
 	<script type="text/javascript">
 		(function scale() {
 			let contentWidth = 546;
@@ -83,8 +81,10 @@
 			let translateY = (scale - 100) / 2;
 			let mainContainer = document.getElementById("main-container");
 			mainContainer.setAttribute("style", `transform: translate(${translateX}%,${translateY}%) scale(${scale}%,${scale}%)`);
-		})();
-		
+		})();		
 	</script>
+	<script type="text/javascript" src="js/key-container-colors.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+
 </body>
 </html>

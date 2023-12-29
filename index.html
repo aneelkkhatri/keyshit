@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>KeysHit</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -73,6 +73,18 @@
 
 	<script type="text/javascript" src="js/key-container-colors.js"></script>
 	<script type="text/javascript" src="js/game.js"></script>
-
+	<script type="text/javascript">
+		(function scale() {
+			let contentWidth = 546;
+			let contentHeight = 620;
+			let scale = Math.min(window.innerWidth / contentWidth, window.innerHeight / contentHeight) * 100;
+			scale = Math.min(scale, 140);
+			let translateX = Math.min((scale - 100) / 2, 0);
+			let translateY = (scale - 100) / 2;
+			let mainContainer = document.getElementById("main-container");
+			mainContainer.setAttribute("style", `transform: translate(${translateX}%,${translateY}%) scale(${scale}%,${scale}%)`);
+		})();
+		
+	</script>
 </body>
 </html>
